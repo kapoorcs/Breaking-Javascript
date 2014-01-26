@@ -21,38 +21,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     
     <!--
-    <script>
-        $("document").ready(function() {
-            alert("The page just loaded!");
-        });
-    </script>
-    -->
     
-    <!--
-    Get all <p> tags
-    $("p");
-    Get the tag with id "list1"
-    $("#list1")
-    Get all <li> tags with class "a"
-    $("li.a");
-    Get all tags with class "b", but only if they 
-    are inside a <ul>
-    $("ul .b");
-    
-    $("p:first")
-    $("p:last")
-    $("p:even")
-    $("p:odd")
-    $("p:odd")
-    $(".a:first")
-    $(".b:even")
-    $("p:gt(1)")
-    $("p:not(p:eq(2))")
     -->
     
     <script>
         $("document").ready(function() {
-            $("p").css("border","3px solid red")
+            //$("ul li:nth-child(3)").css("border","3px solid red")
+            $("ul li:nth-child(3n)").css("border","3px solid red")
         });
     </script>
     
@@ -60,7 +35,7 @@
     </head>
 <body>
     <h1>
-        Hello World! <!--<a href="#about_me">About Me</a>-->
+        Hello World!
     </h1>
     
     <p>
@@ -77,14 +52,9 @@
     <p class="a">This is paragraph 1</p>
     <p id="para1">This is paragraph 2</p>
     <p class="b">This is paragraph 3</p>
-    <p>This is paragraph 4</p>
+    <p id="para4" lang="en-us">This is paragraph 4</p>
     
     
-    <!--
-    <h2>
-        About Me<a name="about_me"></a>
-    </h2>
-    -->
     
 </body>
 </html>

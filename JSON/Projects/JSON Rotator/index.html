@@ -1,0 +1,43 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Carousel</title>
+</head>
+<body>
+    <div id="speakerbox">
+        <div id="carousel">
+            
+        </div>
+        
+    </div>
+    
+    <script id="speakerstpl" type="text/template">
+        {{#speakers}}
+            <div class="speaker">
+                <img src="images/{{shortname}}_tn.jpg" alt="Photo of {{name}}" />
+                <h3>{{name}}</h3>
+                <h4>{{reknown}}</h4>
+                <p>{{bio}}</p>
+            </div>
+        {{/speakers}}
+    </script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.03/jquery.cycle.all.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+
+    <script>
+        $(function(){
+            $.getJSON('data.json', function(data){
+                var template = $('#speakerstpl').html();
+                var html = Mustache.to_html(template, data);
+                $('#carousel').html(html);
+            });//get JSON
+        });
+    </script>
+    
+</body>
+</html>

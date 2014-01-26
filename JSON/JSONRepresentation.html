@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <!--
+    Create an object name person that has three properties (name, age, job) and one method(sayName()).
+    --> 
+    <!-- Object Literals Method-->
+    <script>
+        var person = {
+            full_name : "CK",
+            "age": 29,
+            "job": "Software Developer" ,
+            getName : function(){
+                alert(this.full_name);
+            }
+        }
+        alert(person.full_name);
+        person.getName();
+        //JavaScript Objects
+        //Quotes on the keys are not necessary
+        //JavaScript Object can be any data type like even a full function    
+    </script>
+    
+    <!-- JSON Representation of the above object
+    //JSON keys are wrapped in "quotes"
+    //JSON keys can be a any valid string
+    //JSON values have to be one of six data types-strings,numbers,objects,arrays,boolean or null
+    //JSON has to be parsed into JavaScript - Unlike JavaScript Object, JSON object needs to be fed as a string into a variable and then it has to be parsed
+        //eval
+        //JSON.parse()
+    //JSON.stringify does the opposite of parse
+    {
+        "name": "CK",
+        "age": 29,
+        "job": "Software Developer"
+    }
+    -->
+    
+    
+    
+</head>
+<body>
+
+</body>
+</html>

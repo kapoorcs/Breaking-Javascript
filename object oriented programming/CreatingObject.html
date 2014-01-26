@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <!--
+    Create an object name person that has three properties (name, age, job) and one method(sayName()).
+    -->
+    
+    <!-- Traditional Method -->
+    <!--
+    <script>
+        var person = new Object();
+        person.name = "CK";
+        person.age = 29;
+        person.job = "Software Engineer";
+        
+        person.sayName = function(){
+            alert(this.name);
+        }
+        person.sayName();
+    </script>
+    -->
+    
+    <!-- Object Literals Method-->
+    <script>
+        var person = {
+            name: "CK",
+            age: 29,
+            job: "Software Developer",
+            
+            sayName: function(){
+                alert(this.name);
+            }
+        }
+        
+        person.sayName();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

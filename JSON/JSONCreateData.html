@@ -1,0 +1,66 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <!--Creating Simple Data-->
+    <script>
+        var info = {
+            "full_name" : "Chetan Kapoor",
+            "title" : "CTO",
+            "company" : "Google",
+            "qty" : 3
+        };
+        //Retrieving Data
+            //dot notation
+            alert(info.title);
+            // [] notation
+            alert(info["full_name"]);
+        
+    </script>
+    
+    <!--Creating Data with Arrays-->
+    <script>
+        var info = {
+            "full_name" : "Chetan Kapoor",
+            "title" : "CTO",
+            "company" : "Google",
+            "qty" : 3,
+            "courses" : [
+                "JavaScript & JSON",
+                "Facebook Apps",
+                "jQuery Mobile Web Apps"
+            ]
+        };
+        //Retrieving Data
+            //Accessed via index number
+            alert(info.courses[1]);
+        
+    </script>
+    
+     <!--Creating Data with Objects-->
+    <script>
+        var info = {
+            "full_name" : "Chetan Kapoor",
+            "title" : "CTO",
+            "links" : {
+                "blog" : "http://somethin.com",
+                "facebook" : "http://facebook.com/kapoor"
+            }
+        };
+        //Retrieving Data
+            //Accessed via index number
+            alert(info.links.facebook);
+        
+    </script>
+    
+    
+</head>
+<body>
+
+</body>
+</html>

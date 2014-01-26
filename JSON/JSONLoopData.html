@@ -1,0 +1,56 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+
+    
+</head>
+<body>
+<h2>
+Links    
+</h2>
+<ul id="links">
+        
+</ul>
+    
+    
+    <!--Creating Data with Objects-->
+    <script>
+        var info = {
+            "full_name" : "Chetan Kapoor",
+            "title" : "CTO",
+            "links" : {
+                "blog" : "http://venturepact.com",
+                "blog" : "http://venturepact.com",
+                "blog" : "http://venturepact.com",
+                "facebook" : "http://facebook.com"
+            }
+        };
+        
+        var output = "";
+        
+        for (key in info.links){
+            if(info.links.hasOwnProperty(key)){
+                output += '<li>' +
+                '<a href = "' + info.links[key] +
+                    '">' + key + '</a>' +
+                    '</li>';        
+            }
+        }
+        
+        //alert(output);
+        
+        var update = document.getElementById('links');
+        update.innerHTML = output;
+        
+        
+    </script>
+    
+    
+</body>
+</html>

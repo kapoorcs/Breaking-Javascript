@@ -1,0 +1,25 @@
+/*
+    Document   : jQuery/Projects/Flurry Friends Campaign jQuery Proof-of-Concept/styles/my_style.css
+    Created on : 2014-01-08 07:13 PM
+    Author     : kapoorcs
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+root {
+    display: block;
+}
+
+a:link img, a:visited img{
+    display: none;
+}
+
+a:hover img, a:active img{
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color: #000;
+}

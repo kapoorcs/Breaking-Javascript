@@ -48,11 +48,16 @@
     $(".b:even")
     $("p:gt(1)")
     $("p:not(p:eq(2))")
+
+    $("p[class]")
     -->
     
     <script>
         $("document").ready(function() {
-            $("p").css("border","3px solid red")
+            //$("p[class]").css("border","3px solid red")
+            //$("p[id=para1]").css("border","3px solid red")
+            //$("p[id^=para]").css("border","3px solid red")
+            $("p[id^=para][lang*=en-]").css("border","3px solid red")
         });
     </script>
     
@@ -60,7 +65,7 @@
     </head>
 <body>
     <h1>
-        Hello World! <!--<a href="#about_me">About Me</a>-->
+        Hello World!
     </h1>
     
     <p>
@@ -77,14 +82,9 @@
     <p class="a">This is paragraph 1</p>
     <p id="para1">This is paragraph 2</p>
     <p class="b">This is paragraph 3</p>
-    <p>This is paragraph 4</p>
+    <p id="para4" lang="en-us">This is paragraph 4</p>
     
     
-    <!--
-    <h2>
-        About Me<a name="about_me"></a>
-    </h2>
-    -->
     
 </body>
 </html>
